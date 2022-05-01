@@ -2,7 +2,7 @@
 /*
     Author:     Sergey Suhoff
     Date:       2022-05-01
-    Purpose:    Assignment 7.2 (week 7)
+    Purpose:    Assignment 7.2
 */
 import javafx.application.Application;
 import javafx.geometry.HPos;
@@ -54,7 +54,6 @@ public class SuhoffFutureValueApp extends Application {
         GridPane pane = new GridPane();
         pane.setAlignment(Pos.CENTER);
         pane.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
-        pane.setPrefSize(300, 300);
         pane.setHgap(5.5);
         pane.setVgap(5.5);
 
@@ -74,7 +73,7 @@ public class SuhoffFutureValueApp extends Application {
         pane.add(actionBtnContainer, 1, 4); // per Exhibit
 
         // (f) Set the primary stages title to “YourLastName Future Value App.”
-        Scene scene = new Scene(pane);
+        Scene scene = new Scene(pane, 450, 450);
         primaryStage.setTitle("Suhoff Future Value App");
         primaryStage.setScene(scene);
         primaryStage.show();
