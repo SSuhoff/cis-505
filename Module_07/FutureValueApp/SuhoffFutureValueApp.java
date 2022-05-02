@@ -51,11 +51,11 @@ public class SuhoffFutureValueApp extends Application {
         // (c) In the start() method, add a new GridPane object and set its alignment to
         // Pos.CENTER, set its padding to 11.5, 12.5, 13.5, and 14.5. Next, set the
         // panes Hgap to 5.5 and its Vgap to 5.5.
-        GridPane pane = new GridPane();
-        pane.setAlignment(Pos.CENTER);
-        pane.setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
-        pane.setHgap(5.5);
-        pane.setVgap(5.5);
+        GridPane pane = new GridPane(); // per assignment
+        pane.setAlignment(Pos.CENTER); // per assignment
+        pane.setPadding(new Insets(11.5, 12.5, 13.5, 14.5)); // per assignment
+        pane.setHgap(5.5); // per assignment
+        pane.setVgap(5.5); // per assignment
 
         // (d) Add the controls to the GridPane. For the lblInterestRateFormat label,
         // set the text fill to red and HPos to the right
@@ -64,7 +64,10 @@ public class SuhoffFutureValueApp extends Application {
         pane.add(txtMonthlyPayment, 1, 0);
         pane.add(txtInterestRate, 1, 1);
         pane.add(txtArea, 0, 7, 2, 1);
-
+        pane.add(lblMonthlyPayment, 0, 0);
+        pane.add(lblInterestRate, 0, 1);
+        pane.add(lblOutputDate, 0, 5);
+        pane.add(ddlYears, 1, 3);
         pane.add(lblYears, 0, 3);
         GridPane.setHalignment(lblInterestRateFormat, HPos.RIGHT); // per Exhibit
 
@@ -78,7 +81,7 @@ public class SuhoffFutureValueApp extends Application {
         pane.add(actionBtnContainer, 1, 4); // per Exhibit
 
         // (f) Set the primary stages title to “YourLastName Future Value App.”
-        Scene scene = new Scene(pane, 400, 450);
+        Scene scene = new Scene(pane, 350, 400);
         primaryStage.setTitle("Suhoff Future Value App");
         primaryStage.setScene(scene);
         primaryStage.show();
