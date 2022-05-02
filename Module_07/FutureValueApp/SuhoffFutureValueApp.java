@@ -61,6 +61,11 @@ public class SuhoffFutureValueApp extends Application {
         // set the text fill to red and HPos to the right
         lblInterestRateFormat.setTextFill(Color.RED); // per Exhibit
         pane.add(lblInterestRateFormat, 1, 2); // per Exhibit
+        pane.add(txtMonthlyPayment, 1, 0);
+        pane.add(txtInterestRate, 1, 1);
+        pane.add(txtArea, 0, 7, 2, 1);
+
+        pane.add(lblYears, 0, 3);
         GridPane.setHalignment(lblInterestRateFormat, HPos.RIGHT); // per Exhibit
 
         // (e) Add the clear and calculate buttons to an HBox with a spacing of 10 and a
@@ -73,7 +78,7 @@ public class SuhoffFutureValueApp extends Application {
         pane.add(actionBtnContainer, 1, 4); // per Exhibit
 
         // (f) Set the primary stages title to “YourLastName Future Value App.”
-        Scene scene = new Scene(pane, 450, 450);
+        Scene scene = new Scene(pane, 400, 450);
         primaryStage.setTitle("Suhoff Future Value App");
         primaryStage.setScene(scene);
         primaryStage.show();
